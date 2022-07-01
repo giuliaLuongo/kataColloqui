@@ -1,0 +1,245 @@
+{
+  "academy": [
+    {
+      "id": 1,
+      "title": "22.1",
+      "backTech": "JAVA",
+      "frontTech": "Angular",
+      "teachers": [
+        {
+          "id": 1,
+          "name": "Camillo",
+          "surname" :  "Positano",
+          "subject" : "DB"
+        },
+        {
+          "id": 2,
+          "name": "Sara",
+          "surname" :  "Gaudiosi",
+          "subject" : "Back-End"
+        },
+        {
+          "id": 3,
+          "name": "Giulia",
+          "surname" :  "Luongo",
+          "subject" : "Front-End"
+        }
+      ],
+      "students": [
+        {
+          "id": 1,
+          "name": "Carlo",
+          "surname" :  "Carlini",
+          "age" : 22,
+          "hobby" : "sport"
+        },
+        {
+          "id": 2,
+          "name": "Maria",
+          "surname" :  "Verdi",
+          "age" : 19,
+          "hobby" : "Pittura"
+        },
+        {
+          "id": 3,
+          "name": "Andrea",
+          "surname" :  "Neri",
+          "age" : 28,
+          "hobby" : "Gaming"
+        },
+        {
+          "id": 4,
+          "name": "Mattia",
+          "surname" :  "Rossi",
+          "age" : 24,
+          "hobby" : "Canto"
+        },
+        {
+          "id": 5,
+          "name": "Virginia",
+          "surname" :  "Gialli",
+          "age" : 31,
+          "hobby" : "Design"
+        },
+        {
+          "id": 6,
+          "name": "Paolo",
+          "surname" :  "Paolino",
+          "age" : 18,
+          "hobby" : "Lettura"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "22.2",
+      "backTech": "JAVA",
+      "frontTech": "Angular",
+      "teachers": [
+        {
+          "id": 1,
+          "name": "Catello",
+          "surname" :  "Giorgini",
+          "subject" : "DB"
+        },
+        {
+          "id": 2,
+          "name": "Giovanna",
+          "surname" :  "Brava",
+          "subject" : "Back-End"
+        },
+        {
+          "id": 3,
+          "name": "Lorenzo",
+          "surname" :  "Schiavini",
+          "subject" : "Front-End"
+        }
+      ],
+      "students": [
+        {
+          "id": 1,
+          "name": "Pietro",
+          "surname" :  "Biondi",
+          "age" : 32,
+          "hobby" : "Musica"
+        },
+        {
+          "id": 2,
+          "name": "Marina",
+          "surname" :  "Mori",
+          "age" : 26,
+          "hobby" : "Scultura"
+        },
+        {
+          "id": 3,
+          "name": "Giorgio",
+          "surname" :  "Neri",
+          "age" : 29,
+          "hobby" : "Corsa"
+        },
+        {
+          "id": 4,
+          "name": "Mattia",
+          "surname" :  "Corti",
+          "age" : 24,
+          "hobby" : "Canto"
+        },
+        {
+          "id": 5,
+          "name": "Vittorio",
+          "surname" :  "Gialli",
+          "age" : 21,
+          "hobby" : "Giardinaggio"
+        },
+        {
+          "id": 6,
+          "name": "Roberto",
+          "surname" :  "Salati",
+          "age" : 44,
+          "hobby" : "Bird Watching"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "22.3",
+      "backTech": ".NET",
+      "frontTech": "React",
+      "teachers": [
+        {
+          "id": 1,
+          "name": "Riccardo",
+          "surname" :  "Tasca",
+          "subject" : "DB"
+        },
+        {
+          "id": 2,
+          "name": "Sergio",
+          "surname" :  "Canalicchio",
+          "subject" : "Back-End"
+        },
+        {
+          "id": 3,
+          "name": "Elisabetta",
+          "surname" :  "Ruotolo",
+          "subject" : "Front-End"
+        }
+      ],
+      "students": [
+        {
+          "id": 1,
+          "name": "Ciro",
+          "surname" :  "Esposito",
+          "age" : 25,
+          "hobby" : "Spaccio"
+        },
+        {
+          "id": 2,
+          "name": "Maria",
+          "surname" :  "Verdi",
+          "age" : 19,
+          "hobby" : "Volontariato"
+        },
+        {
+          "id": 3,
+          "name": "Andrea",
+          "surname" :  "Neri",
+          "age" : 28,
+          "hobby" : "Gaming"
+        },
+        {
+          "id": 4,
+          "name": "Chiara",
+          "surname" :  "Bianchi",
+          "age" : 22,
+          "hobby" : "Canto"
+        },
+        {
+          "id": 5,
+          "name": "Vittoria",
+          "surname" :  "Blundi",
+          "age" : 31,
+          "hobby" : "Scrittura"
+        },
+        {
+          "id": 6,
+          "name": "Paolo",
+          "surname" :  "Paolino",
+          "age" : 18,
+          "hobby" : "Lettura"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Acadeflix",
+      "description": "Web App tipo netflix ma senza budjet"
+    },
+    {
+      "id": 2,
+      "title": "Acadesteam",
+      "description": "Web App tipo steam ma senza budjet"
+    },
+    {
+      "id": 3,
+      "title": "Acadefy",
+      "description": "Web App tipo spotify ma senza budjet"
+    }
+  ],
+  "repo": [
+    {
+      "name": "Acadeflix",
+      "ref" : "www.github.com"
+    },
+    {
+      "name": "Acadesteam",
+      "ref" : "www.github.com"
+    },
+    {
+      "name": "Acadefy",
+      "ref" : "www.github.com"
+    }
+  ]
+}

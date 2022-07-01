@@ -1,0 +1,60 @@
+.bg-img{
+  background-color: #efeeec;
+  position: relative;
+  padding: 0 1rem;
+}
+.bg-img::before {
+  content: "";
+  background-image: url('https://images.ctfassets.net/hrltx12pl8hq/1fR5Y7KaK9puRmCDaIof7j/09e2b2b9eaf42d450aba695056793607/vector1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+}
+.bubble{
+  width: 15rem;
+  height: 15rem;
+
+}
+
+.bubble-medium{
+  width: 12rem;
+  height: 12rem;
+}
+.mini-bubble{
+  width: 10rem;
+  height: 10rem;
+}
+.bubble-text{
+  display: none;
+  font-size: 20px;
+  margin: 0;
+}
+
+.bubble, .mini-bubble, .bubble-medium{
+  border-radius: 50%;
+  background-color: #efeeec;
+  box-shadow: 0 0 20px #0b041a;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  opacity: 30%;
+  background-image: url("https://www.archstreet.org/wp-content/uploads/2020/01/giphy-23.gif");
+  background-blend-mode: hard-light;
+}
+.bubble:hover, .mini-bubble:hover, .bubble-medium:hover{
+  transform: scale(1.1);
+  transition: all .5s ease-in-out;
+  background-image: none;
+  .bubble-text{
+    display: block;
+    color: black;
+    font-weight: 200;
+    transition: all .5s ease-in-out;
+  }
+}
+
