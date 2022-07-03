@@ -14,6 +14,6 @@ export class AcademyService {
     return this.http.get<Academy[]>('http://localhost:3000/academy')
   }
   getById(id : number):Observable<Academy>{
-    return this.http.get<Academy>('http://localhost:3000/academy/' + id)
+    return this.http.get<Academy>('http://localhost:3000/academy')
   }
 }
