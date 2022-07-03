@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {AcademyService} from "../../core/services/academy.service";
+import {AcademyService} from "../../core/services/academy-service/academy.service";
 import {Subscription} from "rxjs";
 import {Academy} from "../../core/models/academy";
 
@@ -10,11 +10,12 @@ import {Academy} from "../../core/models/academy";
 })
 export class AcademyComponent implements OnInit, OnDestroy {
 
+  academySub : Subscription | any;
+  academyList : Academy[] = [];
+
   constructor(private academyService : AcademyService) { }
 
-  academySub : Subscription | any;
 
-  academyList : Academy[] = [];
 
   ngOnInit(): void {
     this.academySub = this.academyService.get().subscribe(

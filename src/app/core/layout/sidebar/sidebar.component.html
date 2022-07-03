@@ -1,10 +1,10 @@
 <div class="container">
-  <mat-drawer-container class="sidenav-container bg-blue border-none" autosize>
+  <mat-drawer-container class="sidenav-container bg-purple border-none" autosize>
     <div class="sidenav-content ">
       <mat-icon *ngIf="!showFiller" aria-hidden="false" class="light icon-button" aria-label="border_all icon" (click)="drawer.toggle(); showFiller = true">border_all</mat-icon>
       <mat-icon *ngIf="showFiller" aria-hidden="false" class="light icon-button" aria-label="chevron_left icon" (click)="drawer.toggle(); showFiller = false">chevron_left</mat-icon>
     </div>
-    <mat-drawer #drawer class="sidenav bg-blue" mode="side">
+    <mat-drawer #drawer class="sidenav bg-purple" mode="side">
       <div class="nav-menu  d-flex p-1 gap-1 a-center" routerLinkActive="" routerLink="home">
         <mat-icon aria-hidden="false" class="light mini-icon" aria-label="border_all icon">home</mat-icon>
         <p class="m-0">Home</p>

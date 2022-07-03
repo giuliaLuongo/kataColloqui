@@ -1,1 +1,17 @@
-<p>project-detail works!</p>
+<div class="container bg-img d-flex j-center a-center">
+  <div class="bg-light home-container d-flex j-center a-center gap-5">
+    <h4 class="lilac icon-button crumb" routerLink="/projects">projects</h4>
+    <h2 class="lilac">details</h2>
+    <div class="d-flex flex-c gap-2 academy-details">
+      <h2 class="b-bottom-dark">{{project?.title}}</h2>
+      <div class="d-flex  j-around a-start gap-2">
+        <div>
+          <ul class="list-none">
+            <li class="b-bottom-dark m-1">Description</li>
+            <li>{{project?.description}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

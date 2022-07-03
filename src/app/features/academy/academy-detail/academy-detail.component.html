@@ -1,1 +1,25 @@
-<p>academy-detail works!</p>
+<div class="container bg-img d-flex j-center a-center">
+  <div class="bg-light home-container d-flex j-center a-center gap-5">
+    <h4 class="lilac icon-button crumb" routerLink="/academy">academy</h4>
+    <h2 class="lilac">details</h2>
+    <div class="d-flex flex-c gap-2 academy-details">
+      <h2 class="b-bottom-dark">{{academy?.title}} - {{academy?.backTech}} / {{academy?.frontTech}}</h2>
+      <div class="d-flex  j-around a-start gap-2">
+        <div>
+          <ul class="list-none">
+            <li class="b-bottom-dark m-1">Teachers</li>
+            <li *ngFor="let teacher of academy?.teachers"
+                class="m-1">{{teacher.subject}} : {{teacher.name}} {{teacher.surname}}</li>
+          </ul>
+        </div>
+        <div class="b-left">
+          <ul class="list-none">
+            <li class="b-bottom-dark m-1">Students</li>
+            <li *ngFor="let student of academy?.students"
+                class="m-1">{{student.name}} {{student.surname}}, {{student.age}} </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

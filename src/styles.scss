@@ -5,8 +5,18 @@
 @import "theme/icons.scss";
 @import "theme/typography.scss";
 @import "theme/pages/_home.scss";
+@import "theme/pages/_academy.scss";
 
 html, body {
   min-height: 100vh;
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: normal;
+}
+a:hover{
+  text-shadow: 0 0 5px white;
+}

@@ -2,6 +2,50 @@
   background-color: #efeeec;
   position: relative;
   padding: 0 1rem;
+  .home-container{
+    background-color: white;
+    min-height: 80vh;
+    max-height: max-content;
+    width: 80vw;
+    position: relative;
+    border-radius: 0.5rem;
+    .lilac{
+      font-weight: lighter;
+      border: 1px solid #a286e7;
+      border-radius: 50%;
+      height: 6rem;
+      width: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .crumb{
+      width: 4rem;
+      height: 4rem;
+      font-size: 12px;
+    }
+    .crumb:hover{
+      color: white;
+      background-color: #a286e7;
+    }
+    .home-buttons{
+      border-left: 1px solid #a286e7;
+      padding-left: 3rem;
+      div{
+        width: 5rem;
+        height: 5rem;
+        font-size: 12px;
+        background-color: #a286e7;
+        color: white;
+        font-weight: lighter;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+  }
 }
 .bg-img::before {
   content: "";
@@ -15,46 +59,45 @@
   left: 0px;
   opacity: 0.6;
 }
-.bubble{
-  width: 15rem;
-  height: 15rem;
-
-}
-
-.bubble-medium{
-  width: 12rem;
-  height: 12rem;
-}
-.mini-bubble{
-  width: 10rem;
-  height: 10rem;
-}
-.bubble-text{
-  display: none;
-  font-size: 20px;
-  margin: 0;
-}
-
-.bubble, .mini-bubble, .bubble-medium{
-  border-radius: 50%;
-  background-color: #efeeec;
-  box-shadow: 0 0 20px #0b041a;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  opacity: 30%;
-  background-image: url("https://www.archstreet.org/wp-content/uploads/2020/01/giphy-23.gif");
-  background-blend-mode: hard-light;
-}
-.bubble:hover, .mini-bubble:hover, .bubble-medium:hover{
-  transform: scale(1.1);
-  transition: all .5s ease-in-out;
-  background-image: none;
-  .bubble-text{
-    display: block;
-    color: black;
-    font-weight: 200;
-    transition: all .5s ease-in-out;
-  }
-}
+//.bubble{
+//  width: 15rem;
+//  height: 15rem;
+//}
+//
+//.bubble-medium{
+//  width: 12rem;
+//  height: 12rem;
+//}
+//.mini-bubble{
+//  width: 10rem;
+//  height: 10rem;
+//}
+//.bubble-text{
+//  display: none;
+//  font-size: 20px;
+//  margin: 0;
+//}
+//
+//.bubble, .mini-bubble, .bubble-medium{
+//  border-radius: 50%;
+//  background-color: #efeeec;
+//  box-shadow: 0 0 20px #0b041a;
+//  position: relative;
+//  background-size: cover;
+//  background-position: center;
+//  opacity: 30%;
+//  background-image: url("https://www.archstreet.org/wp-content/uploads/2020/01/giphy-23.gif");
+//  background-blend-mode: hard-light;
+//}
+//.bubble:hover, .mini-bubble:hover, .bubble-medium:hover{
+//  transform: scale(1.1);
+//  transition: all .5s ease-in-out;
+//  background-image: none;
+//  .bubble-text{
+//    display: block;
+//    color: black;
+//    font-weight: 200;
+//    transition: all .5s ease-in-out;
+//  }
+//}
 

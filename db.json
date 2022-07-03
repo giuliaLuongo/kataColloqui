@@ -231,15 +231,15 @@
   "repo": [
     {
       "name": "Acadeflix",
-      "ref" : "www.github.com"
+      "ref" : "https://github.com"
     },
     {
       "name": "Acadesteam",
-      "ref" : "www.github.com"
+      "ref" : "https://github.com"
     },
     {
       "name": "Acadefy",
-      "ref" : "www.github.com"
+      "ref" : "https://github.com"
     }
   ]
 }

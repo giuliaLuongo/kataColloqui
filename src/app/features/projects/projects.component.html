@@ -1,1 +1,10 @@
-<p>projects works!</p>
+<div class="container bg-img d-flex j-center a-center">
+  <div class="bg-light home-container d-flex j-center a-center gap-5">
+    <h4 class="lilac icon-button crumb" routerLink="/home">home</h4>
+    <h2 class="lilac">projects</h2>
+    <div class="home-buttons d-flex flex-c gap-2">
+      <div *ngFor="let project of projectList"
+           class="icon-button" routerLink="/projects/{{project.id}}">{{project.title}}</div>
+    </div>
+  </div>
+</div>
