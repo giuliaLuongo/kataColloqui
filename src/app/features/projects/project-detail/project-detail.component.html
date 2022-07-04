@@ -7,8 +7,13 @@
       <div class="d-flex  j-around a-start gap-2">
         <div>
           <ul class="list-none">
-            <li class="b-bottom-dark m-1">Description</li>
-            <li>{{project?.description}}</li>
+<!--            <li class="b-bottom-dark m-1">Description</li>-->
+            <li>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Description</mat-label>
+                  <input matInput (keydown.enter)="patchProjectDescription()" value="{{project?.description}}">
+                </mat-form-field>
+            </li>
           </ul>
         </div>
       </div>

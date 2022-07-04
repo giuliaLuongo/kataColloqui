@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ProjectsComponent } from './projects.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import {RouterModule, Routes} from "@angular/router";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
 
 const routes : Routes = [
   {path: '', component: ProjectsComponent},
@@ -18,7 +20,9 @@ const routes : Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class ProjectsModule { }

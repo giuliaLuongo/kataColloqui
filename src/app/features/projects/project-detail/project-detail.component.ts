@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {Subscription} from "rxjs";
+import {firstValueFrom, from, lastValueFrom, of, Subscription} from "rxjs";
 import {Project} from "../../../core/models/project";
 import {ActivatedRoute} from "@angular/router";
 import {ProjectService} from "../../../core/services/project-service/project.service";
@@ -14,6 +14,7 @@ export class ProjectDetailComponent implements OnInit, OnDestroy {
   projectSub : Subscription | undefined;
   projectId : number | undefined;
   project : Project | any;
+  projectSubPatch : Subscription | undefined
 
   constructor(private projectService : ProjectService, private activatedRoute : ActivatedRoute) { }
 
@@ -23,7 +24,9 @@ export class ProjectDetailComponent implements OnInit, OnDestroy {
       obs => {this.project = {...obs}}
     )
   }
-
+  patchProjectDescription(){
+    lastValueFrom(this.projectService.patch(this.project)).then(p => this.project = p);
+  }
   ngOnDestroy(): void {
     this.projectSub?.unsubscribe()
   }
