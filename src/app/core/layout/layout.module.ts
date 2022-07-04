@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatIconModule} from "@angular/material/icon";
-import {AppRoutingModule} from "../../app-routing.module";
+import {RouterModule} from "@angular/router";
 
 
 
@@ -18,7 +18,7 @@ import {AppRoutingModule} from "../../app-routing.module";
         CommonModule,
         MatSidenavModule,
         MatIconModule,
-        AppRoutingModule
+        RouterModule
     ]
 })
 export class LayoutModule { }
