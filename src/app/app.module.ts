@@ -11,9 +11,7 @@ import {ProjectsComponent} from "./features/projects/projects.component";
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AcademyComponent,
-    ProjectsComponent
+    AppComponent
   ],
     imports: [
         BrowserModule,
