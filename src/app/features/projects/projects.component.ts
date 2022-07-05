@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Subscription} from "rxjs";
+import { Project } from 'src/app/core/models/project';
+import { ProjectService } from 'src/app/core/services/project-service/project.service';
 
 @Component({
   selector: 'app-projects',
@@ -11,7 +13,9 @@ export class ProjectsComponent implements OnInit {
   projectSub : Subscription | any;
   projectList : Project[] = [];
 
-  constructor() { }
+
+  constructor(private projectService
+    : ProjectService) { }
 
   ngOnInit(): void {
     this.projectSub = this.projectService.get().subscribe(
